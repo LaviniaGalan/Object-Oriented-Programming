@@ -1,0 +1,34 @@
+#pragma once
+#include "Service.h"
+
+void GetSizeOfVector_ValidInput_ReturnsSize();
+void GetElementFromIndex_ValidInput_ReturnsElement();
+
+void FindEvidenceIndexByID_ValidInput_ReturnsIndex();
+void FindEvidenceIndexByID_NonExistentID_ReturnsError();
+void AddEvidenceToRepository_ValidInput_EvidenceAdded();
+void AddEvidenceToRepository_DuplicateID_ReturnsError();
+void DeleteEvidenceFromRepository_ValidInput_EvidenceDeleted();
+void DeleteEvidenceFromRepository_NonExistentEvidence_ReturnsError();
+void UpdateEvidenceInRepository_ValidInput_EvidenceUpdated();
+void UpdateEvidenceInRepository_NonExistentEvidence_ReturnsError();
+
+void AddEvidence_ValidInput_EvidenceAdded();
+void AddEvidence_DuplicateID_ReturnsError();
+void DeleteEvidence_ValidInput_EvidenceDeleted();
+void DeleteEvidence_NonExistentEvidence_ReturnsError();
+void UpdateEvidence_ValidInput_EvidenceUpdated();
+void UpdateEvidence_NonExistentEvidence_ReturnsError();
+void GetAccessMode_ValidInput_ReturnsAccessMode();
+void SetAccessMode_ValidInput_ModifiesAccesMode();
+void GetNextEvidence_ValidInput_ReturnsNextEvidece();
+void GetNextEvidence_EmptyRepository_ThrowsException();
+void SaveEvidenceToUserDatabase_ValidInput_AddsEvidenceToUserDatabase();
+void SaveEvidenceToUserDatabase_InvalidID_ReturnsError();
+void FilterByMeasurementAndQuantity_ValidInputNoMeasurement_FiltersListOfEvidence();
+void FilterByMeasurementAndQuantity_ValidInputWithMeasurement_FiltersListOfEvidence();
+
+void testsForRepository();
+void testsForService();
+void testsForDynamicVector();
+void runAllTests();
